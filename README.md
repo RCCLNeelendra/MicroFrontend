@@ -17,7 +17,7 @@ The Micro Frontend Dashboard is a scalable, high-performance application built u
 
 ```plaintext
 MicroFrontend/
-├── micro-frontend-dashboard/
+├── host-shell/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── Header.tsx
@@ -38,7 +38,7 @@ MicroFrontend/
 │   ├── tsconfig.json
 │   ├── webpack.config.js
 │   └── package.json
-└── feature-module/
+└── feature-mfe/
     ├── src/
     │   ├── components/
     │   │   ├── ...
@@ -72,26 +72,26 @@ Ensure you have the following installed:
 2. **Navigate to each micro frontend folder and install dependencies:**
 
    ```sh
-   cd MicroFrontend/micro-frontend-dashboard
+   cd MicroFrontend/host-shell
    npm install
 
-   cd ../feature-module
+   cd ../feature-mfe
    npm install
    ```
 
 ### Running the Application
 
-1. **Start the development server for the `micro-frontend-dashboard`:**
+1. **Start the development server for the `host-shell`:**
 
    ```sh
-   cd MicroFrontend/micro-frontend-dashboard
+   cd MicroFrontend/host-shell
    npm start
    ```
 
-2. **In a separate terminal, start the development server for the `feature-module`:**
+2. **In a separate terminal, start the development server for the `feature-mfe`:**
 
    ```sh
-   cd MicroFrontend/feature-module
+   cd MicroFrontend/feature-mfe
    npm start
    ```
 
@@ -105,17 +105,17 @@ To deploy the application, you can follow the deployment steps for your chosen p
 
 ### Building for Production
 
-1. **Build the `micro-frontend-dashboard`:**
+1. **Build the `host-shell`:**
 
    ```sh
-   cd MicroFrontend/micro-frontend-dashboard
+   cd MicroFrontend/host-shell
    npm run build
    ```
 
-2. **Build the `feature-module`:**
+2. **Build the `feature-mfe`:**
 
    ```sh
-   cd MicroFrontend/feature-module
+   cd MicroFrontend/feature-mfe
    npm run build
    ```
 
